@@ -1,0 +1,87 @@
+body{
+    background-color: #111827;
+    text-align: center;
+    font-family: monospace;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-family: monospace;
+    width:12em;
+    border:0em;
+    padding: .8em 2em;
+    margin: 1em auto;
+    display: block;
+    color: white;
+    cursor: pointer;
+    box-shadow:   0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    border-radius: 5px;
+    font-weight: bold;
+}
+#psuedo{
+    border: none;
+    width: 300px;
+    height: 350px;
+    border-radius: 1em;
+    background-color: #1F2937;
+    overflow: hidden;
+    padding: 2em;
+    position: absolute;
+    top: 56px;
+    box-shadow:   0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+#psuedo:hover{
+    transition: all 2s ease-in-out 1s;
+    display: none;
+    z-index: 0;
+  
+}
+.mainhover{
+    border: none;
+    width: 300px;
+    min-height: 350px;
+    border-radius: 1em;
+    background-color: #1F2937;
+    overflow: hidden;
+    padding: 2em;
+    position: relative;
+    top: 50px;
+    box-shadow:   0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+}
+.mainhover:hover{
+    z-index: 1000;
+
+}
+#increment-btn{
+    background-color: #10B981;
+}
+#save-btn{
+    background-color: #10B981;
+}
+#reset-btn{
+    background-color: #10B981;
+
+} 
+p{
+    padding: 10px;
+     
+}
+#increment-btn , #save-btn ,#reset-btn{
+    transition:all 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}       
+#increment-btn:hover , #save-btn:hover, #reset-btn:hover{
+    transform:scale(1.03)
+    
+}
+:focus{
+    outline: 2px solid #111827            ;
+    outline-offset: 3px;
+}
+
